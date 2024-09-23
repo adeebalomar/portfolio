@@ -7,8 +7,9 @@ body {
     color: #333;
 }
 
+/* Updated header with orange background */
 header {
-    background-color: #333;
+    background-color: #ff9800;  /* Orange background for the header */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -37,7 +38,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff9800; /* Orange accent on hover */
+    color: #f5f5f5; /* Lighter hover effect for nav links */
 }
 
 section {
