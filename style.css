@@ -71,11 +71,6 @@ figcaption {
     font-size: 1rem;
 }
 
-section#contact {
-    background-color: #eef2f7;
-    padding: 30px;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -88,16 +83,5 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-h2 {
-    color: #5e81ac;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.1rem;
-    line-height: 1.6;
 }
 
