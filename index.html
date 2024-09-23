@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alomar Portfolio</title>
+    <title>X's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Alomar Portfolio</h1>
+        <h1>X's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#artwork">Artwork</a></li>
+                <li><a href="#research">Research Posters</a></li>
+                <li><a href="#code">Code Snippets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
 
     <section id="about">
         <h2>About Me</h2>
         <p>Welcome to my portfolio! My name is Adeeb Alomar and I am a medical student at UT Southwestern.         
         Here, you will find three sections that showcase different aspects of my work:
     </p>
-    <ul>
-        <li><strong>Artwork:</strong> A collection of my personal paintings and creative pieces.</li>
-        <li><strong>Research Posters:</strong> Posters and visual summaries from my research projects.</li>
-        <li><strong>Code Snippets:</strong> Examples of my coding work.</li>
-    </ul>
-</section>
-
-<section id="portfolio">
-    <h2>My Work</h2>
+        <ul>
+            <li><strong>Artwork:</strong> A collection of my personal paintings and creative pieces.</li>
+            <li><strong>Research Posters:</strong> Posters and visual summaries from my research projects.</li>
+            <li><strong>Code Snippets:</strong> Examples of my coding work.</li>
+        </ul>
+    </section>
+    
+    <!-- Artwork Section -->
+    <section id="artwork" class="section">
+        <h2>Artwork</h2>
     <div class="gallery">
         <figure>
             <img src="images/IMG_0297.JPG" alt="Painting 1">
@@ -224,15 +228,42 @@
     </div>
 </section>
 
+    <!-- Research Posters Section -->
+    <section id="research" class="section">
+        <h2>Research Posters</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/poster1.jpg" alt="Research Poster 1">
+                <figcaption>Research Poster 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/poster2.jpg" alt="Research Poster 2">
+                <figcaption>Research Poster 2</figcaption>
+            </figure>
+        </div>
+    </section>
+    
+        <!-- Code Snippets Section -->
+    <section id="code" class="section">
+        <h2>Code Snippets</h2>
+        <div class="code-gallery">
+            <pre><code>// Example of a code snippet
+def my_function():
+    print("Hello, world!")</code></pre>
 
+            <pre><code># Another code example
+import pandas as pd
+df = pd.read_csv('data.csv')</code></pre>
+        </div>
+    </section>
+    
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: contact@alomarportfolio.com</p>
-    </section>
+        <p>Email: adeeb@email.com </p>
+   </section>
 
     <footer>
-        <p>&copy; 2024 Alomar Portfolio. All Rights Reserved.</p>
+        <p>&copy; 2024 X's Portfolio. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
-
