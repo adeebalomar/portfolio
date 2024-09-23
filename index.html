@@ -13,7 +13,7 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"> My Portfolio</a>
+        <a class="navbar-brand" href="#">Adeeb Alomar's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,455 +21,85 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#artwork">Artwork</a></li>
-                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="#research">Research Posters</a></li>
                 <li class="nav-item"><a class="nav-link" href="#code">Code Snippets</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! My name is Adeeb Alomar and I am a medical student at UT Southwestern.         
-        Here, you will find three sections that showcase different aspects of my work:
-    </p>
-        <ul>
-            <li><strong>Artwork:</strong> A collection of my personal paintings and creative pieces.</li>
-            <li><strong>Research Posters:</strong> Posters and visual summaries from my research projects.</li>
-            <li><strong>Code Snippets:</strong> Examples of my coding work.</li>
-        </ul>
-    </section>
-      <!-- Artwork Section with Cards -->
+    
+       <!-- Artwork Section with Clickable Lightbox -->
     <section id="artwork" class="py-5">
         <div class="container">
             <h2 class="text-center">Artwork</h2>
             <div class="row">
-                <!-- Add each image as a card in the artwork section -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_0297.JPG" class="card-img-top" alt="Painting 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 1</h5>
-                        </div>
-                    </div>
+                <!-- Gallery of clickable artwork images -->
+                <div class="col-md-4 mb-4">
+                    <img src="images/IMG_0297.JPG" class="img-fluid artwork-img" data-toggle="modal" data-target="#artModal1" alt="Painting 1">
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_0658.JPG" class="card-img-top" alt="Painting 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 2</h5>
-                        </div>
-                    </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/IMG_0658.JPG" class="img-fluid artwork-img" data-toggle="modal" data-target="#artModal2" alt="Painting 2">
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_0724.JPG" class="card-img-top" alt="Painting 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 3</h5>
-                        </div>
-                    </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/IMG_0724.JPG" class="img-fluid artwork-img" data-toggle="modal" data-target="#artModal3" alt="Painting 3">
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_2905.JPG" class="card-img-top" alt="Painting 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 4</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_2906.JPG" class="card-img-top" alt="Painting 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 5</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_2917.JPG" class="card-img-top" alt="Painting 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 6</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_4514.JPG" class="card-img-top" alt="Painting 7">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 7</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_4516.JPG" class="card-img-top" alt="Painting 8">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 8</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_4636.JPG" class="card-img-top" alt="Painting 9">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 9</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_4662.JPG" class="card-img-top" alt="Painting 10">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 10</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_4959.JPG" class="card-img-top" alt="Painting 11">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 11</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_4979.JPG" class="card-img-top" alt="Painting 12">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 12</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5239.JPG" class="card-img-top" alt="Painting 13">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 13</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5255.JPG" class="card-img-top" alt="Painting 14">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 14</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5267.JPG" class="card-img-top" alt="Painting 15">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 15</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5325.JPG" class="card-img-top" alt="Painting 16">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 16</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5335.JPG" class="card-img-top" alt="Painting 17">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 17</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5367.JPG" class="card-img-top" alt="Painting 18">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 18</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5393.JPG" class="card-img-top" alt="Painting 19">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 19</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5407.JPG" class="card-img-top" alt="Painting 20">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 20</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5416.JPG" class="card-img-top" alt="Painting 21">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 21</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5450.JPG" class="card-img-top" alt="Painting 22">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 22</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5458.JPG" class="card-img-top" alt="Painting 23">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 23</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5461.JPG" class="card-img-top" alt="Painting 24">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 24</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5513.JPG" class="card-img-top" alt="Painting 25">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 25</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5519.JPG" class="card-img-top" alt="Painting 26">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 26</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5559.JPG" class="card-img-top" alt="Painting 27">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 27</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5560.JPG" class="card-img-top" alt="Painting 28">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 28</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5577.JPG" class="card-img-top" alt="Painting 29">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 29</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5637.JPG" class="card-img-top" alt="Painting 30">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 30</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5640.JPG" class="card-img-top" alt="Painting 31">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 31</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5647.JPG" class="card-img-top" alt="Painting 32">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 32</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5880.JPG" class="card-img-top" alt="Painting 33">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 33</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_5974.JPG" class="card-img-top" alt="Painting 34">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 34</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_6060.JPG" class="card-img-top" alt="Painting 35">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 35</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_6096.JPG" class="card-img-top" alt="Painting 36">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 36</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_6142.JPG" class="card-img-top" alt="Painting 37">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 37</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_6586.HEIC" class="card-img-top" alt="Painting 38">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 38</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_6939.JPG" class="card-img-top" alt="Painting 39">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 39</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_7031.JPG" class="card-img-top" alt="Painting 40">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 40</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_7388.JPG" class="card-img-top" alt="Painting 41">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 41</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_7427.JPG" class="card-img-top" alt="Painting 42">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 42</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_7470.JPG" class="card-img-top" alt="Painting 43">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 43</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_7780.JPG" class="card-img-top" alt="Painting 44">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 44</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_7873.JPG" class="card-img-top" alt="Painting 45">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 45</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_7935.JPG" class="card-img-top" alt="Painting 46">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 46</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/IMG_8058.PNG" class="card-img-top" alt="Painting 47">
-                        <div class="card-body">
-                            <h5 class="card-title">Painting 47</h5>
-                        </div>
-                    </div>
-                </div>
+                <!-- Add more images similarly -->
             </div>
         </div>
     </section>
+
+      <!-- Modals for Artwork Lightbox -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="artModal1" tabindex="-1" role="dialog" aria-labelledby="artModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artModal1Label">Painting 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/IMG_0297.JPG" class="img-fluid" alt="Painting 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="artModal2" tabindex="-1" role="dialog" aria-labelledby="artModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artModal2Label">Painting 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/IMG_0658.JPG" class="img-fluid" alt="Painting 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="artModal3" tabindex="-1" role="dialog" aria-labelledby="artModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artModal3Label">Painting 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/IMG_0724.JPG" class="img-fluid" alt="Painting 3">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Research Posters Section -->
     <section id="research" class="section">
