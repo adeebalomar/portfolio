@@ -10,12 +10,17 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
 header nav ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -28,6 +33,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 section {
@@ -35,10 +41,19 @@ section {
     text-align: center;
 }
 
+section#about {
+    background-color: #eef2f7;
+}
+
+section#portfolio {
+    background-color: #ffffff;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    padding-top: 20px;
 }
 
 .gallery img {
@@ -47,17 +62,42 @@ section {
     border-radius: 10px;
 }
 
+.gallery figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+section#contact {
+    background-color: #eef2f7;
+    padding: 30px;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 15px 0;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
 
+footer p {
+    margin: 0;
+}
+
 h2 {
     color: #5e81ac;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
