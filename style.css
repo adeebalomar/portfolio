@@ -36,6 +36,10 @@ header nav ul li a {
     font-size: 1.2rem;
 }
 
+header nav ul li a:hover {
+    color: #ff9800; /* Orange accent on hover */
+}
+
 section {
     padding: 50px;
     text-align: center;
@@ -60,6 +64,14 @@ section#portfolio {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect with slight zoom and shadow */
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .gallery figure {
@@ -69,6 +81,7 @@ section#portfolio {
 figcaption {
     margin-top: 10px;
     font-size: 1rem;
+    color: #ff9800; /* Orange accent for captions */
 }
 
 footer {
@@ -85,3 +98,21 @@ footer p {
     margin: 0;
 }
 
+/* Custom Styles for the Modal (Lightbox) */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-header {
+    background-color: #ff9800; /* Orange accent in modal header */
+    color: white;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-header .close {
+    color: white;
+}
