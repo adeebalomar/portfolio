@@ -393,13 +393,16 @@
 
 <!-- Script to Change Image in Modal Dynamically -->
 <script>
-    $('#imageModal').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget); // Button that triggered the modal
-        var imageUrl = button.data('image'); // Extract info from data-* attributes
-        var modal = $(this);
-        modal.find('#modalImage').attr('src', imageUrl); // Update the modal's image src
+    $(document).ready(function() {
+        $('#imageModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var imageUrl = button.data('image'); // Extract info from data-* attributes
+            var modal = $(this);
+            modal.find('#modalImage').attr('src', imageUrl); // Update the modal's image src
+        });
     });
 </script>
+
 
   <!-- Research Posters Section -->
     <section id="research-posters" class="py-5">
