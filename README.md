@@ -1,4 +1,5 @@
 # Welcome to Adeeb Alomar's Portfolio! 
+alomarportfolio.com 
 
 ## Here you will find different sections that showcase my ArtWork, Research Posters, and code snippets. Just scroll through and click through the different sections.
 
