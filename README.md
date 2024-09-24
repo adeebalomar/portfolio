@@ -1,11 +1,13 @@
 # Welcome to Adeeb Alomar's Portfolio! 
 [Visit My Portfolio](https://www.alomarportfolio.com)
 
-# To view my Orthopaedic research code, please click on the research-code.R file"
+## Here you will find a 3 main sections: images, research-code.R, and posters.md
+### images will contain my artwork including sketches and paintings
+### research-code.R will contain a snippet of my code I wrote in R to facilitate my statistical analysis on Radiographic Templating for Tarsometatarsal Operative Fixation
+### posters.md will contain an image and PDF file of my previously presented posters at several conferences.
 
-## Here you will find different sections that showcase my ArtWork, Research Posters, and code snippets. Just scroll through and click through the different sections.
 
-### 
+## My Artwork
 
 ![IMG_0297](https://github.com/user-attachments/assets/9b5dacc0-8454-44d5-bc4a-7e96f6503b1d)
 
