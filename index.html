@@ -11,6 +11,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
     <style>
         /* Modern fonts */
         body {
@@ -35,11 +38,12 @@
             color: #fff;
         }
 
-        /* Dark background for images */
+        /* Image cards with shadow effect */
         .image-container {
             background-color: #2c2c2c;
             padding: 10px;
             border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
         }
 
         /* Separator Lines between sections */
@@ -48,7 +52,7 @@
             margin: 50px 0;
         }
 
-        /* Deep Navy Blue button styles with Brushed Gold hover */
+        /* Buttons */
         .btn-dark-blue {
             background-color: #2a3b4d; /* Deep Navy Blue */
             color: white;
@@ -66,7 +70,7 @@
             background-color: #f5f5f1; /* Soft Warm Beige */
             text-align: center;
             position: relative;
-            overflow: hidden; /* Allow shapes to be contained */
+            padding-bottom: 50px;
         }
 
         #intro h2 {
@@ -80,11 +84,18 @@
             color: #333; /* Darker text */
         }
 
-        /* Footer Contact Section with white text */
+        /* Footer Contact Section */
         #contact {
             background-color: #2a3b4d; /* Deep Navy Blue */
             color: white;
             padding: 50px 0;
+        }
+
+        /* Icons in contact section */
+        .contact-icons i {
+            font-size: 1.5rem;
+            color: #b89868; /* Brushed Gold icons */
+            margin-right: 15px;
         }
 
         /* Spacing between sections */
@@ -102,33 +113,33 @@
             color: #d4a5a5; /* Dusty Rose for links */
         }
 
-        /* Adjust Image Section Spacing */
-        .image-row {
-            margin-bottom: 20px;
-        }
-
-        /* Shapes in Intro Section */
-        .shape {
+        /* Shapes */
+        .shape-circle {
             position: absolute;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            background: #2a3b4d; /* Navy Blue */
-            z-index: -1; /* Behind content */
+            background-color: #b89868; /* Brushed Gold */
+            z-index: -1;
         }
 
-        .circle-large {
-            width: 300px;
-            height: 300px;
+        .shape-left {
             top: 10%;
-            left: -150px;
+            left: -100px;
         }
 
-        .circle-small {
-            width: 150px;
-            height: 150px;
+        .shape-right {
             bottom: 10%;
-            right: -75px;
+            right: -100px;
         }
 
+        /* Subtle shadow for content sections */
+        .content-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+            padding: 30px;
+        }
     </style>
 </head>
 <body>
@@ -159,15 +170,14 @@
             <p class="lead">
                 Welcome to my portfolio! Here, you can explore my artwork, research posters, and code snippets from my research on Radiographic Templating for Tarsometatarsal Operative Fixation. For a more detailed analysis of my work, please visit my <a href="https://github.com/adeebalomar/portfolio" target="_blank">GitHub Repository</a>.
             </p>
-            <!-- Shapes in the background -->
-            <div class="shape circle-large"></div>
-            <div class="shape circle-small"></div>
+            <!-- Decorative Shapes -->
+            <div class="shape-circle shape-left"></div>
+            <div class="shape-circle shape-right"></div>
         </div>
     </section>
 
     <!-- Separator Line -->
     <div class="section-divider"></div>
-    
    <!-- Artwork Section -->
 <section id="artwork" class="py-5">
     <div class="container">
