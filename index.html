@@ -38,9 +38,36 @@
             color: #fff;
         }
 
-        /* Hamburger Icon Color */
+        /* Custom Hamburger Icon - Lines */
+        .navbar-toggler {
+            border: none; /* Remove border */
+        }
+
         .navbar-toggler-icon {
-            background-color: #fff; /* White icon for better visibility */
+            display: inline-block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff; /* White lines */
+            position: relative;
+        }
+
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+        }
+
+        .navbar-toggler-icon::before {
+            top: -8px; /* Spacing above */
+        }
+
+        .navbar-toggler-icon::after {
+            top: 8px; /* Spacing below */
         }
 
         /* Image cards with shadow effect */
@@ -145,6 +172,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
             padding: 30px;
         }
+
     </style>
 </head>
 <body>
@@ -154,7 +182,7 @@
         <div class="container">
             <a class="navbar-brand text-white" href="#">Adeeb Alomar's Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> <!-- This is the hamburger icon -->
+                <span class="navbar-toggler-icon"></span> <!-- Custom hamburger icon with lines -->
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -173,7 +201,7 @@
         <div class="container">
             <h2>Welcome to Adeeb Alomar's Portfolio</h2>
             <p class="lead">
-                Welcome to my portfolio! Here, you can explore my artwork, research posters, and code snippets from my research on Radiographic Templating for Tarsometatarsal Operative Fixation. For a more detailed analysis of my work, please visit my <a href="https://github.com/adeebalomar/portfolio" target="_blank">GitHub Repository</a>.
+                Welcome to my portfolio! Here, you can explore my artwork, research posters, and code snippets from my research on Radiographic Templating for Tarsometatarsal Operative Fixation. For a more detailed analysis of my work, please visit my <a href="https://github.com/adeebalomar/portfolio" target="_blank">GitHub Repository <i class="fab fa-github"></i></a>.
             </p>
             <!-- Decorative Shapes -->
             <div class="shape-circle shape-left"></div>
