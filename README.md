@@ -1,6 +1,8 @@
 # Welcome to Adeeb Alomar's Portfolio! 
 [Visit My Portfolio](https://www.alomarportfolio.com)
 
+# To view my Orthopaedic research code, please click on the research-code.R file"
+
 ## Here you will find different sections that showcase my ArtWork, Research Posters, and code snippets. Just scroll through and click through the different sections.
 
 ### 
