@@ -41,6 +41,7 @@
             position: absolute;
             border-radius: 50%;
             background: #2a3b4d; /* Navy Blue */
+            z-index: -1; /* Behind content */
         }
 
         .circle-large {
@@ -48,28 +49,25 @@
             height: 300px;
             top: 50px;
             right: -150px;
-            z-index: -1; /* Behind the content */
         }
 
         .circle-small {
             width: 150px;
             height: 150px;
-            bottom: 150px;
+            bottom: -75px;
             left: -75px;
-            z-index: -1;
         }
 
         /* Gradients for sections */
         .gradient-section {
-            background: linear-gradient(45deg, #f5f5f1 30%, #b89868 100%);
+            background: linear-gradient(45deg, #f5f5f1 30%, #b89868 100%); /* Brushed gold */
         }
 
         /* Textured background for the contact section */
         #contact {
-            background: url('https://www.transparenttextures.com/patterns/linen.png') repeat; /* Add subtle texture */
+            background: url('https://www.transparenttextures.com/patterns/linen.png') repeat; /* Subtle texture */
             background-color: #2a3b4d; /* Deep Navy Blue */
             color: white;
-            position: relative;
         }
 
         /* Bold and larger text for headings */
@@ -104,10 +102,15 @@
             color: #333; /* Darker text */
         }
 
-        /* Footer Contact Section with subtle texture */
+        /* Footer Contact Section with texture and white text */
         #contact .contact-details {
             position: relative;
             padding: 50px 0;
+        }
+
+        /* White text for the contact section */
+        #contact h2, #contact p {
+            color: white;
         }
 
         /* Dusty Rose highlights for text links */
@@ -136,8 +139,8 @@
             </div>
         </div>
     </header>
-
-    <!-- Intro Section with Shapes -->
+    
+   <!-- Intro Section with Shapes -->
     <section id="intro" class="py-5">
         <div class="container">
             <h2 class="mb-4">Welcome to Adeeb Alomar's Portfolio</h2>
@@ -148,6 +151,7 @@
             <div class="shape circle-small"></div>
         </div>
     </section>
+    
    <!-- Artwork Section -->
 <section id="artwork" class="py-5">
     <div class="container">
