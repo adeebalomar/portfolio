@@ -11,9 +11,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
-    
     <style>
         /* Use modern font 'Poppins' */
         body {
@@ -21,12 +18,12 @@
             background-color: #f5f5f1; /* Soft Warm Beige */
             color: #333; /* Dark text color */
         }
-        
+
         /* Dark Navy Blue for navigation bar */
         .navbar {
             background-color: #2a3b4d; /* Deep Navy Blue */
         }
-        
+
         /* White text for navbar links */
         .navbar-nav .nav-link {
             color: #fff;
@@ -39,15 +36,46 @@
             border-radius: 8px;
         }
 
+        /* Shapes and Gradients */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: #2a3b4d; /* Navy Blue */
+        }
+
+        .circle-large {
+            width: 300px;
+            height: 300px;
+            top: 50px;
+            right: -150px;
+            z-index: -1; /* Behind the content */
+        }
+
+        .circle-small {
+            width: 150px;
+            height: 150px;
+            bottom: 150px;
+            left: -75px;
+            z-index: -1;
+        }
+
+        /* Gradients for sections */
+        .gradient-section {
+            background: linear-gradient(45deg, #f5f5f1 30%, #b89868 100%);
+        }
+
+        /* Textured background for the contact section */
+        #contact {
+            background: url('https://www.transparenttextures.com/patterns/linen.png') repeat; /* Add subtle texture */
+            background-color: #2a3b4d; /* Deep Navy Blue */
+            color: white;
+            position: relative;
+        }
+
         /* Bold and larger text for headings */
         h1, h2, h3 {
             font-weight: 700;
             color: #333333; /* Charcoal Black */
-        }
-
-        /* Cream background and dark text */
-        section {
-            padding: 50px 0;
         }
 
         /* Deep Navy Blue button styles with Brushed Gold hover */
@@ -63,21 +91,23 @@
             background-color: #b89868; /* Brushed Gold on hover */
         }
 
-        /* Footer Contact Section with Deep Navy Blue */
-        #contact {
-            background-color: #2a3b4d; /* Deep Navy Blue */
-            color: white;
-        }
-
         /* Custom styles for intro text */
         #intro {
             background-color: #f5f5f1; /* Soft Warm Beige */
             text-align: center;
+            position: relative;
+            overflow: hidden; /* Allow shapes to be contained */
         }
 
         #intro p {
             font-size: 1.2rem;
             color: #333; /* Darker text */
+        }
+
+        /* Footer Contact Section with subtle texture */
+        #contact .contact-details {
+            position: relative;
+            padding: 50px 0;
         }
 
         /* Dusty Rose highlights for text links */
@@ -106,18 +136,18 @@
             </div>
         </div>
     </header>
-    
 
-    <!-- Intro Section -->
-    <section id="intro" class="py-5 bg-light text-center">
+    <!-- Intro Section with Shapes -->
+    <section id="intro" class="py-5">
         <div class="container">
             <h2 class="mb-4">Welcome to Adeeb Alomar's Portfolio</h2>
             <p class="lead">
-                Welcome to my portfolio! Here, you can explore my artwork, research posters, and code snippets from my research on Radiographic Templating for Tarsometatarsal Operative Fixation. For a more detailed analysis of my work, please visit my  <a href="https://github.com/adeebalomar/portfolio" target="_blank">GitHub Repository</a>.
+                Welcome to my portfolio! Here, you can explore my artwork, research posters, and code snippets from my research on Radiographic Templating for Tarsometatarsal Operative Fixation. For a more detailed analysis of my work, please visit my <a href="https://github.com/adeebalomar/portfolio" target="_blank">GitHub Repository</a>.
             </p>
+            <div class="shape circle-large"></div>
+            <div class="shape circle-small"></div>
         </div>
     </section>
-
    <!-- Artwork Section -->
 <section id="artwork" class="py-5">
     <div class="container">
