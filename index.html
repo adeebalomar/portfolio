@@ -107,6 +107,28 @@
             margin-bottom: 20px;
         }
 
+        /* Shapes in Intro Section */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: #2a3b4d; /* Navy Blue */
+            z-index: -1; /* Behind content */
+        }
+
+        .circle-large {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: -150px;
+        }
+
+        .circle-small {
+            width: 150px;
+            height: 150px;
+            bottom: 10%;
+            right: -75px;
+        }
+
     </style>
 </head>
 <body>
@@ -130,13 +152,16 @@
         </div>
     </header>
 
-        <!-- Intro Section with Shapes -->
+    <!-- Intro Section with Shapes -->
     <section id="intro" class="py-5">
         <div class="container">
             <h2>Welcome to Adeeb Alomar's Portfolio</h2>
             <p class="lead">
                 Welcome to my portfolio! Here, you can explore my artwork, research posters, and code snippets from my research on Radiographic Templating for Tarsometatarsal Operative Fixation. For a more detailed analysis of my work, please visit my <a href="https://github.com/adeebalomar/portfolio" target="_blank">GitHub Repository</a>.
             </p>
+            <!-- Shapes in the background -->
+            <div class="shape circle-large"></div>
+            <div class="shape circle-small"></div>
         </div>
     </section>
 
