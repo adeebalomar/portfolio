@@ -4,20 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adeeb Alomar's Portfolio</title>
+    
+    <!-- Google Fonts: Poppins (modern font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
+    
     <style>
+        /* Use modern font 'Poppins' */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f5e1; /* Cream-colored background */
+            color: #333; /* Dark text color */
+        }
+        
+        /* Dark blue for navigation bar */
+        .navbar {
+            background-color: #003366; /* Dark blue */
+        }
+        
+        /* White text for navbar links */
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
         /* Dark background for images */
         .image-container {
             background-color: #2c2c2c;
             padding: 10px;
             border-radius: 8px;
         }
+
+        /* Bold and larger text for headings */
+        h1, h2, h3 {
+            font-weight: 700;
+            color: #000; /* Bold black */
+        }
+
+        /* Cream background and dark text */
+        section {
+            padding: 50px 0;
+        }
+
+        /* Dark blue button styles */
+        .btn-dark-blue {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .btn-dark-blue:hover {
+            background-color: #002244;
+        }
+
+        /* Footer Contact Section */
+        #contact {
+            background-color: #003366; /* Dark blue */
+            color: white;
+        }
+
+        /* Custom styles for intro text */
+        #intro {
+            background-color: #f8f5e1; /* Cream background */
+            text-align: center;
+        }
+
+        #intro p {
+            font-size: 1.2rem;
+            color: #333; /* Darker text */
+        }
     </style>
 </head>
 <body>
+    
+    <!-- Navigation Bar -->
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Adeeb Alomar's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#artwork">Artwork</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research-posters">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code-snippet">Code Snippet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     
     <!-- Navigation Bar -->
     <header class="navbar navbar-expand-lg navbar-dark bg-orange">
