@@ -285,9 +285,11 @@
     <!-- Research Posters Section -->
     <section id="research-posters" class="py-5">
         <div class="container">
+            <h2 class="text-center">Research Posters</h2>
             <div class="row">
                 <!-- Orthopaedic Research Poster -->
                 <div class="col-md-6 mb-4">
+                    <h3>Radiographic Templating for Tarsometatarsal Operative Fixation</h3>
                     <a href="images/Ortho_research_1.jpg" target="_blank">
                         <img src="images/Ortho_research_1.jpg" class="img-fluid" alt="Orthopaedic Research Poster Page 1">
                     </a>
@@ -298,11 +300,34 @@
 
                 <!-- Gene Editing Research Poster -->
                 <div class="col-md-6 mb-4">
+                    <h3>Tunable Control of Base Editors</h3>
                     <a href="images/Gene_Editing.jpg" target="_blank">
                         <img src="images/Gene_Editing.jpg" class="img-fluid" alt="Gene Editing Research Poster">
                     </a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Code Snippet Section -->
+    <section id="code-snippet" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Code Snippet</h2>
+            <pre class="bg-dark text-white p-3 rounded">
+<code>
+// Example code for Radiographic Templating Analysis
+function calculateTemplate(templateData) {
+    const adjustedMeasurements = templateData.map((value) => value * 0.85);
+    const sum = adjustedMeasurements.reduce((acc, curr) => acc + curr, 0);
+    return sum / adjustedMeasurements.length;
+}
+
+// Sample data
+const tarsometatarsalData = [24.5, 23.1, 22.8, 24.0];
+const averageTemplate = calculateTemplate(tarsometatarsalData);
+console.log("Average Templating Measurement: " + averageTemplate);
+</code>
+            </pre>
         </div>
     </section>
 
