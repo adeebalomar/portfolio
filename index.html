@@ -103,6 +103,7 @@
             text-align: center;
             position: relative;
             padding-bottom: 50px;
+            overflow: hidden; /* Allow shapes to be visible */
         }
 
         #intro h2 {
@@ -148,21 +149,21 @@
         /* Shapes with more visible colors */
         .shape-circle {
             position: absolute;
-            width: 200px;
-            height: 200px;
+            width: 400px;
+            height: 400px;
             border-radius: 50%;
-            background-color: #5A5A5A; /* Dark Gray */
+            background-color: #5A5A5A; /* Dark Gray for contrast */
             z-index: -1;
         }
 
         .shape-left {
-            top: 10%;
-            left: -100px;
+            top: -50px;
+            left: -200px;
         }
 
         .shape-right {
-            bottom: 10%;
-            right: -100px;
+            bottom: -50px;
+            right: -200px;
         }
 
         /* Subtle shadow for content sections */
@@ -203,7 +204,7 @@
             <p class="lead">
                 Welcome to my portfolio! Here, you can explore my artwork, research posters, and code snippets from my research on Radiographic Templating for Tarsometatarsal Operative Fixation. For a more detailed analysis of my work, please visit my <a href="https://github.com/adeebalomar/portfolio" target="_blank">GitHub Repository <i class="fab fa-github"></i></a>.
             </p>
-            <!-- Decorative Shapes -->
+            <!-- Larger, More Visible Decorative Shapes -->
             <div class="shape-circle shape-left"></div>
             <div class="shape-circle shape-right"></div>
         </div>
