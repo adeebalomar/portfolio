@@ -114,6 +114,22 @@ footer p {
     font-size: 1.5rem;
 }
 
+/* Style for the Research Poster titles */
+.poster-title {
+    font-size: 1.25rem; /* Smaller font size for titles */
+    font-weight: bold; /* Keep it bold */
+    margin-bottom: 10px;
+    color: #333; /* Dark text */
+}
+
+/* Style for the image captions (if any) */
+.poster-caption {
+    font-size: 1.1rem; /* Bigger font size for captions */
+    color: #555; /* Slightly lighter color */
+    margin-top: 10px;
+}
+
+
 .modal-header .close {
     color: white;
 }
