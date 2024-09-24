@@ -3,53 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alomar Portfolio</title>
+    <title>Adeeb Alomar's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Alomar Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Adeeb Alomar's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#artwork">Artwork</a></li>
+                <li class="nav-item"><a class="nav-link" href="#research">Research Posters</a></li>
+                <li class="nav-item"><a class="nav-link" href="#code">Code Snippets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am an artist and researcher, showcasing paintings, research posters, and code projects.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <div class="gallery">
-            <figure>
-                <img src="images/IMG_0297.JPG" alt="Painting 1">
-                <figcaption>Painting 1</figcaption>
-            </figure>
-            <figure>
-                <img src="images/IMG_0658.JPG" alt="Painting 2">
-                <figcaption>Painting 2</figcaption>
-            </figure>
-            <figure>
-                <img src="images/IMG_0724.JPG" alt="Painting 3">
-                <figcaption>Painting 3</figcaption>
-            </figure>
-            <!-- Add more images like this -->
+    
+       <!-- Artwork Section with Clickable Lightbox -->
+    <section id="artwork" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Artwork</h2>
+            <div class="row">
+                <!-- Gallery of clickable artwork images -->
+                <div class="col-md-4 mb-4">
+                    <img src="images/IMG_0297.JPG" class="img-fluid artwork-img" data-toggle="modal" data-target="#artModal1" alt="Painting 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/IMG_0658.JPG" class="img-fluid artwork-img" data-toggle="modal" data-target="#artModal2" alt="Painting 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/IMG_0724.JPG" class="img-fluid artwork-img" data-toggle="modal" data-target="#artModal3" alt="Painting 3">
+                </div>
+                <!-- Add more images similarly -->
+            </div>
         </div>
     </section>
 
+      <!-- Modals for Artwork Lightbox -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="artModal1" tabindex="-1" role="dialog" aria-labelledby="artModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artModal1Label">Painting 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/IMG_0297.JPG" class="img-fluid" alt="Painting 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="artModal2" tabindex="-1" role="dialog" aria-labelledby="artModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artModal2Label">Painting 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/IMG_0658.JPG" class="img-fluid" alt="Painting 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="artModal3" tabindex="-1" role="dialog" aria-labelledby="artModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artModal3Label">Painting 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/IMG_0724.JPG" class="img-fluid" alt="Painting 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Posters Section -->
+    <section id="research" class="section">
+        <h2>Research Posters</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/poster1.jpg" alt="Research Poster 1">
+                <figcaption>Research Poster 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/poster2.jpg" alt="Research Poster 2">
+                <figcaption>Research Poster 2</figcaption>
+            </figure>
+        </div>
+    </section>
+    
+        <!-- Code Snippets Section -->
+    <section id="code" class="section">
+        <h2>Code Snippets</h2>
+        <div class="code-gallery">
+            <pre><code>// Example of a code snippet
+def my_function():
+    print("Hello, world!")</code></pre>
+
+            <pre><code># Another code example
+import pandas as pd
+df = pd.read_csv('data.csv')</code></pre>
+        </div>
+    </section>
+    
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: contact@alomarportfolio.com</p>
-    </section>
+        <p>Email: adeebalomar-eras@hotmail.com </p>
+   </section>
 
     <footer>
-        <p>&copy; 2024 Alomar Portfolio. All Rights Reserved.</p>
+        <p>&copy; 2024 Adeeb Alomar's Portfolio. All Rights Reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
-
