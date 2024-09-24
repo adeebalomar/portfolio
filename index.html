@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dark background for images */
+        .image-container {
+            background-color: #2c2c2c;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
+    
     <!-- Navigation Bar -->
     <header class="navbar navbar-expand-lg navbar-dark bg-orange">
         <div class="container">
@@ -21,8 +30,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#artwork">Artwork</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#research-posters">Research</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#code-snippet">Code Snippet</a></li> <!-- Added Code Snippet to the Nav -->
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li> <!-- Added Contact to the Nav -->
                 </ul>
             </div>
         </div>
@@ -282,28 +292,34 @@
         </div>
     </section>
 
-    <!-- Research Posters Section -->
+  <!-- Research Posters Section -->
     <section id="research-posters" class="py-5">
         <div class="container">
             <h2 class="text-center">Research Posters</h2>
             <div class="row">
-                <!-- Orthopaedic Research Poster -->
+                <!-- Orthopaedic Research Poster with dark background -->
                 <div class="col-md-6 mb-4">
                     <h3>Radiographic Templating for Tarsometatarsal Operative Fixation</h3>
-                    <a href="images/Ortho_research_1.jpg" target="_blank">
-                        <img src="images/Ortho_research_1.jpg" class="img-fluid" alt="Orthopaedic Research Poster Page 1">
-                    </a>
-                    <a href="images/Ortho_research_2.jpg" target="_blank">
-                        <img src="images/Ortho_research_2.jpg" class="img-fluid" alt="Orthopaedic Research Poster Page 2">
-                    </a>
+                    <div class="image-container">
+                        <a href="images/Ortho_research_1.jpg" target="_blank">
+                            <img src="images/Ortho_research_1.jpg" class="img-fluid" alt="Orthopaedic Research Poster Page 1">
+                        </a>
+                    </div>
+                    <div class="image-container mt-4">
+                        <a href="images/Ortho_research_2.jpg" target="_blank">
+                            <img src="images/Ortho_research_2.jpg" class="img-fluid" alt="Orthopaedic Research Poster Page 2">
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Gene Editing Research Poster -->
+                <!-- Gene Editing Research Poster with dark background -->
                 <div class="col-md-6 mb-4">
                     <h3>Tunable Control of Base Editors</h3>
-                    <a href="images/Gene_Editing.jpg" target="_blank">
-                        <img src="images/Gene_Editing.jpg" class="img-fluid" alt="Gene Editing Research Poster">
-                    </a>
+                    <div class="image-container">
+                        <a href="images/Gene_Editing.jpg" target="_blank">
+                            <img src="images/Gene_Editing.jpg" class="img-fluid" alt="Gene Editing Research Poster">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,6 +344,16 @@ const averageTemplate = calculateTemplate(tarsometatarsalData);
 console.log("Average Templating Measurement: " + averageTemplate);
 </code>
             </pre>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <p class="lead">Feel free to reach out for inquiries or collaborations.</p>
+            <p>Email: <a href="mailto:adeebalomar@example.com" class="text-white">adeebalomar@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/adeebalomar" target="_blank" class="text-white">github.com/adeebalomar</a></p>
         </div>
     </section>
 
