@@ -639,17 +639,34 @@
             <h2 class="text-center mb-4">Code Snippet</h2>
             <pre class="bg-dark text-white p-3 rounded">
 <code>
-// Example code for Radiographic Templating Analysis
-function calculateTemplate(templateData) {
-    const adjustedMeasurements = templateData.map((value) => value * 0.85);
-    const sum = adjustedMeasurements.reduce((acc, curr) => acc + curr, 0);
-    return sum / adjustedMeasurements.length;
-}
+// Code for Radiographic Templating Analysis
+# Set the working directory
+setwd("/Users/adeebalomar/Statistical Analysis - Dr.Sanders/LMM")
 
-// Sample data
-const tarsometatarsalData = [24.5, 23.1, 22.8, 24.0];
-const averageTemplate = calculateTemplate(tarsometatarsalData);
-console.log("Average Templating Measurement: " + averageTemplate);
+# Load the necessary libraries
+install.packages("Matrix")
+library(Matrix)
+install.packages("lme4")
+library(lme4)
+install.packages("lmerTest")
+library(lmerTest)
+
+# Load the dataset
+V3_LMM_IMA <- read.csv("V3_LMM_IMA.csv")
+
+# List of angles to calculate ICC for
+angles <- c("CI", "IMA", "MA", "T1MA", "LMM")
+
+# Loop through each angle and fit the linear mixed model
+for (angle in angles) {
+  formula <- as.formula(paste0(angle, " ~ Age + Sex + Race + (1 | ID)"))
+  model <- lmer(formula, data = V3_LMM_IMA)
+  
+  # Print the summary with p-values for each model
+  cat("\nModel Summary for", angle, ":\n")
+  summary(model)
+};
+
 </code>
             </pre>
         </div>
