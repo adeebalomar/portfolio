@@ -231,13 +231,15 @@
         <div class="row">
             <!-- Dynamic Artwork Gallery -->
 <!-- Example image with data-title attribute -->
-<div class="col-md-4 mb-4">
-    <div class="image-container">
-        <a href="#" data-toggle="modal" data-target="#imageModal" data-image="images/1.JPG" data-title="Still Life of an Apple">
-            <img src="images/1.JPG" class="img-fluid" alt="Artwork">
-        </a>
+
+            <!-- First image with title -->
+    <div class="col-md-4 mb-4">
+        <div class="image-container">
+               <a href="#" data-toggle="modal" data-target="#imageModal" data-image="images/1.JPG" data-title="Still Life of an Apple">
+                <img src="images/1.JPG" class="img-fluid" alt="Artwork">
+            </a>
+        </div>
     </div>
-</div>
             <div class="col-md-4 mb-4">
                 <div class="image-container">
                     <a href="#" data-toggle="modal" data-target="#imageModal" data-image="images/2.JPG">
@@ -560,20 +562,24 @@
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<!-- Script to Load the Image and Title Dynamically in the Modal -->
 <script>
     $(document).ready(function() {
         $('#imageModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget); // Button that triggered the modal
             var imageUrl = button.data('image'); // Extract info from data-* attributes
-            var imageTitle = button.data('title'); // Extract the image title
+            var imageTitle = button.data('title'); // Extract the image title (if exists)
             var modal = $(this);
             modal.find('#modalImage').attr('src', imageUrl); // Update the modal's image src
-            modal.find('#modalImageTitle').text(imageTitle); // Update the modal's title
+
+            // Update the modal's title if available, otherwise hide the title
+            if (imageTitle) {
+                modal.find('#modalImageTitle').text(imageTitle).show();
+            } else {
+                modal.find('#modalImageTitle').hide(); // Hide the title if none
+            }
         });
     });
 </script>
-
 
 </body>
 </html>
